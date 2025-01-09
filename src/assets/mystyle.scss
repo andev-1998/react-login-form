@@ -1,0 +1,84 @@
+$left-color: pink;
+$right-color: blue;
+.body-content {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, pink, blue);
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+.login-form {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 40%;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 16px;
+  height: 80vh;
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .form-group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 20px;
+      label {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding-left: 24px;
+        padding-bottom: 12px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .icon-form {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+    .forgot-link {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      padding-bottom: 16px;
+      font-size: 12px;
+    }
+    .sign-up {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .other-sign-up {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 32px;
+      font-size: 14px;
+    }
+  }
+  .btn-login {
+    background: linear-gradient(45deg, pink, blue);
+    color: white;
+    padding: 8px;
+    border-radius: 16px;
+  }
+}
